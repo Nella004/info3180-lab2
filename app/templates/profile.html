@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile">
+    <img src="{{ url_for('static', filename='https://www.pinterest.com/pin/1548181177154786/') }}" alt="Profile Picture">
+    <h1>Elisabeth Taylor</h1>
+    <p>Username: lizzietaylor</p>
+    <p>Location: New York</p>
+    <p>Joined: {{ date_joined.strftime("%B, %Y") }}</p>
+    <p>Short bio: here to live life to the fullest</p>
+    <p>Posts: 100</p>
+    <p>Followers: 250</p>
+    <p>Following: 150</p>
+    <button>Follow</button>
+</div>
+{% endblock %}
